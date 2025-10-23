@@ -75,5 +75,16 @@ public class Product extends Item{
 	}
 	
 	
+	public void decreaseStock(int cantidad) throws Exception {
+		if(cantidad <= 0) {
+			throw new Exception("Error: La cantidad no puede ser negativa!");
+		}
+		if(this.stock < cantidad) {
+			throw new Exception("Error: El stock es menor a la cantidad pedida!, Stock Actual: " + getStock());
+		}
+		
+		this.stock -=  cantidad;
+	}
+	
 
 }

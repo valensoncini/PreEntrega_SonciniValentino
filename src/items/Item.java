@@ -4,7 +4,7 @@ import interfaces.IDiscount;
 
 public abstract class Item implements IDiscount{
 	
-	protected static int count = 0;
+	protected static int count = 1;
 	protected int id;
 	protected String name;
 	protected double price;

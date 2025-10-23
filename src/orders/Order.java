@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Order {
 	
-	private static int count = 0;
+	private static int count = 1;
 	private int id;
 	private LocalDate date;
 	private final ArrayList<Detail> detailList ;
